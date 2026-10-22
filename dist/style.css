@@ -41,3 +41,8 @@ h3,.approach-grid h3{font-size:24px;line-height:1.4;letter-spacing:-.8px}
 .price-row h3{font-family:'Golos Text',Arial,sans-serif;font-size:16px;letter-spacing:0}
 .calendar-heading h3{font-family:'Golos Text',Arial,sans-serif;font-size:18px;letter-spacing:0}
 @media(max-width:760px){h1{font-size:clamp(35px,7.8vw,57px);letter-spacing:-1.4px;line-height:1.24}h2{font-size:31px;letter-spacing:-1px;line-height:1.3}.brand{font-size:17px}.price-row h3{font-size:13px}.approach-grid h3{font-size:23px}.stats b{font-size:45px}.quote-section blockquote{font-size:23px;letter-spacing:-.6px}}
+
+/* Persistent appointment action, desktop and mobile. */
+.mobile-book,.mobile-book.hidden{position:fixed;display:flex;align-items:center;justify-content:center;left:50%;right:auto;bottom:max(18px,env(safe-area-inset-bottom));width:auto;min-width:240px;max-width:calc(100% - 36px);padding:15px 30px;z-index:30;transform:translateX(-50%);border:1px solid #87957b;border-radius:40px;background:#293d32;color:#fffdf8;font-family:'Golos Text',Arial,sans-serif;font-size:13px;font-weight:500;line-height:1.5;white-space:nowrap;box-shadow:0 8px 30px #293d3230;transition:background .25s,box-shadow .25s}
+.mobile-book:hover{background:#435a3c;box-shadow:0 10px 34px #293d3240}.mobile-book:focus-visible{outline:2px solid #966c40;outline-offset:4px}.contact{padding-bottom:110px}
+@media(max-width:760px){.mobile-book,.mobile-book.hidden{min-width:0;width:89%;max-width:440px;bottom:max(12px,env(safe-area-inset-bottom));padding:14px 24px;font-size:12px}.contact{padding-bottom:110px}.hero-actions{flex-wrap:wrap;row-gap:16px}}
